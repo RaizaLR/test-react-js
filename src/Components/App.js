@@ -1,7 +1,6 @@
-import './Components/App.css';
 import React from "react";
-import Jobs from './Components/Jobs';
-import Home from './Components/Home';
+import Jobs from './Jobs';
+import Home from './Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,7 +9,7 @@ import {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router basename={process.env.PUBLIC_URL}>
 
     <Switch>
           <Route exact path="/jobs">
@@ -21,7 +20,7 @@ const App = () => {
           </Route>
     </Switch>
 
-    </BrowserRouter>   
+    </Router>   
   );
 
 }
