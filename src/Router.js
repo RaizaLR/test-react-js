@@ -10,7 +10,7 @@ import {
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
 
     <Switch>
           <Route exact path="/jobs">
@@ -21,7 +21,7 @@ const App = () => {
           </Route>
     </Switch>
 
-    </Router>   
+    </BrowserRouter>   
   );
 
 }
